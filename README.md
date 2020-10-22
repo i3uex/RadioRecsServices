@@ -6,7 +6,7 @@ Web services used by our Radio Recommendation system.
 
 Python 3 is a requirement.
 
-These services are developed using a Jupyter notebook, to make development and iteration easier and faster. These advantages take their toll later, when the services have to be offered in a server.
+The services are developed using a Jupyter notebook, to make development and iteration easier and faster. These advantages take their toll later, when the services have to be deployed in a server.
 
 1. Execute `python3 -m pip install jupyter_kernel_gateway` to install the [Jupyter Kernel Gateway][jkg], a web server that provides headless access to Jupyter kernels.
 2. Execute `jupyter kernelgateway --generate-config` to generate the configuration file for Jupyter Kernel Gateway in a folder inside the user you are issuing these commands with.
@@ -21,7 +21,7 @@ These services are developed using a Jupyter notebook, to make development and i
 
     The second one sets the port the service will listen from.
 
-    A personal advice here: I like keeping these lines close to the original ones, keeping them commented out. For example, the one related with the IP looks something like this in my case:
+    A personal advice here: I like keeping these lines close to the original ones, leaving them commented out. For example, the one related with the IP looks something like this in my case:
 
     ```bash
     ...
