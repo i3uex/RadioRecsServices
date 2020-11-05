@@ -15,11 +15,14 @@ The services are developed using a Jupyter notebook, to make development and ite
     ```bash
     c.KernelGatewayApp.ip = '*'
     c.KernelGatewayApp.port = 9090
+    c.KernelGatewayApp.allow_origin = '*'
     ```
 
     The first one tells Jupyter Kernel Gateway to listen on every available IP. It should allow you to access the service from outside the server. It may be a good idea to limit access to those consuming the service.
 
     The second one sets the port the service will listen from.
+    
+    The third one allows the service to be accessed from IPs and ports different to the ones this service is offered at.
 
     A personal advice here: I like keeping these lines close to the original ones, leaving them commented out. For example, the one related with the IP looks something like this in my case:
 
