@@ -35,8 +35,9 @@ The services are developed using a Jupyter notebook, to make development and ite
     ```
 
 4. Execute [`screen`][screen]. We are going to let Jupyter running as long as needed.
-5. Start the services with the command `jupyter kernelgateway --KernelGatewayApp.api='kernel_gateway.notebook_http' --KernelGatewayApp.seed_uri='/home/radiorecs/RadioRecsServices/RS.ipynb'`. In this example, the name of the Linux user is **radiorecs**, as can be seen in the last parameter passed to Jupyter.
-6. Deatach from the screen session with the combination `Ctrl+a d`. That is, press `Ctrl` and `a` keys together, release them and then press `d`. That's all. You can attach to the screen later with the command `screen -r`.
+5. Make sure you are inside this project's folder, with something like this: `cd RadioRecsServices`.
+6. Start the services with the command `jupyter kernelgateway --KernelGatewayApp.api='kernel_gateway.notebook_http' --KernelGatewayApp.seed_uri='/home/radiorecs/RadioRecsServices/RS.ipynb'`. In this example, the name of the Linux user is **radiorecs**, as can be seen in the last parameter passed to Jupyter.
+7. Deatach from the screen session with the combination `Ctrl+a d`. That is, press `Ctrl` and `a` keys together, release them and then press `d`. That's all. You can attach to the screen later with the command `screen -r`.
 
 [jkg]: https://jupyter-kernel-gateway.readthedocs.io/en/latest/ "Jupyter Kernel Gateway is a web server that provides headless access to Jupyter kernels"
 [screen]: https://linuxize.com/post/how-to-use-linux-screen/ "How To Use Linux Screen"
